@@ -1,0 +1,66 @@
+﻿<Window x:Class="_2024._11._05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2024._11._05"
+        mc:Ignorable="d"
+        Title="Gridproject" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <TextBlock Background="GreenYellow" Text="KOLBÁSZ"/>
+        <TextBox  Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="Black" Foreground="White"/>
+        <TextBlock Background="CornflowerBlue" Grid.Column="3" Text="SAJT" TextAlignment="Center"/>
+        <Border Grid.Row="2" Grid.Column="3" Background="LightSeaGreen">
+            <Border
+                 Background="SpringGreen"
+                 Width="100"
+                 Height="78"
+               
+                 CornerRadius="20"
+                 
+                 
+                >
+                <TextBlock 
+               
+                VerticalAlignment="Center"
+                    
+                HorizontalAlignment="Center"
+                Text="Trabant"
+                FontSize="20"
+                FontStyle="Oblique"
+                FontWeight="Bold"
+                Padding="20"
+                Foreground="PaleVioletRed"
+                   
+                       />
+            </Border>
+        </Border>
+        <TextBox Grid.Column="1" Background="DarkOliveGreen" Text ="Paprika" TextAlignment="Center"/>
+        <Button Grid.Column="1" Grid.Row="2"/>
+        <StackPanel  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="MediumSeaGreen">
+            <TextBlock  Text="fehér"/>
+            <TextBlock  Text="sárga"/>
+            <TextBlock  Text="piros"/>
+            <TextBlock Text="kolbász"/>
+        </StackPanel>
+        <StackPanel  Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Background="MediumSeaGreen">
+            <TextBlock Text="Alma"/>
+            <TextBlock Text="Körte"/>
+            <TextBlock  Text="banán"/>
+            <TextBlock Text="paradicsom"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
